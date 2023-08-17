@@ -1,0 +1,382 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Cormorant+Upright:wght@300&family=Darumadrop+One&family=Josefin+Sans:ital,wght@1,500&family=Liu+Jian+Mao+Cao&family=Open+Sans:wght@300&family=Oswald:wght@700&family=Pacifico&family=Yuji+Mai&family=Yuji+Syuku&display=swap');
+
+
+
+:root{
+    --font-title:'Josefin Sans', sans-serif;
+    --font-subtitle:'Cormorant Upright', serif;
+    --font-p-cairo:'Cairo', sans-serif;
+    --font-p-opensans:'Open Sans', sans-serif;
+    --font-artWord:'Pacifico', cursive;
+    --font-bold: 'Oswald', sans-serif;
+    --color-text:#a59a8b;
+    --color-text-light:#c7b0a0;
+    --color-bg:black;
+    --color-title-shadow:rgb(171, 196, 170, 0.5);
+    --color-golden:#FFD95A;
+    --color-vainilla:#F3DEBA;
+
+
+
+}
+
+body{
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+html, body{
+  scroll-behavior: smooth;
+  width: 99vw;
+  height: 97%;
+
+}
+
+#container{
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.about{
+  text-align: left;
+  width: 400px;
+}
+.container-main{
+  width: 92%;
+  height: 92%;
+  border: 1px solid var(--color-vainilla);
+  position: relative;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: flex-end;
+  font-family: var(--font-p-cairo);
+}
+#name{
+ font-size: 40px;
+ margin-bottom: 0;
+ font-family: var(--font-bold);
+}
+.title{
+  font-style: italic;
+}
+
+.bg-light{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+  border-radius: 50%;
+  background: radial-gradient( #F3DEBA ,#e66465, #6a72cb );
+  opacity: 0.4;
+  box-shadow: 10px 5px 20px 10px #e66465;
+  transition: all 0.8s ;
+}
+
+
+.sidenav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top:0;
+  left: 0;
+  background-color: rgb(17, 17, 17);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 1;
+  
+  
+  
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: gray;
+  display: block;
+  font-family: var(--font-subtitle);
+  z-index: 5;
+
+ 
+}
+.sidenav img{
+  width: 40%;
+  position: relative;
+  left: 50%;
+  translate: -50%;
+  margin: 10px 0;
+  border-radius: 50%;
+  border: 5px solid var(--color-vainilla);
+}
+.sidenav img:hover{
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.sidenav a:hover {
+  color: #e66465;
+  transform: scale(1.05);
+  transition: 0.1s;
+  
+}
+.sidenav .closebtn{
+  position: absolute;
+  top: 5px;
+  left:70px;
+  font-size: 20px;
+  background-color: #111;
+  color:var(--color-vainilla);
+  border: 0;
+}
+
+.openbtn{
+  font-size: 20px;
+  color: var(--color-text);
+  margin-left: 10px;
+  margin-top: 10px;
+ 
+}
+
+#main {
+  transition: margin-left 0.3s ;
+  padding: 20px;
+  
+
+
+  
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+#work{
+  display: none;
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  bottom: 50%;
+  left:10%;
+  transform: translate(-25%, 50%);
+  border-radius: 10px;
+  
+}
+.works{
+  list-style: none;
+  margin:20px 0;
+}
+
+.works a{
+  text-decoration: none;
+  color: var(--color-text-light);
+  font-family: var(--font-p-cairo);
+  font-size: 15px;
+
+}
+b{
+  font-size: 25px;
+}
+
+.bold{
+  font-family: var(--font-bold);
+}
+.works a:hover{
+  text-decoration: underline;
+  
+}
+#self-learning{
+  
+  
+  display: none;
+  height: 100%;
+  width: 70%;
+  position: absolute;
+  bottom: 50%;
+  left:10%;
+  transform: translate(28.5%, 50%);
+  border-radius: 10px;
+  
+}
+#course-container{
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+ 
+  
+}
+.course-list{
+  max-width: 1000px;
+  width: max-content;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  
+  list-style: none;
+  
+  overflow-x: scroll;
+  
+  scrollbar-width: 2px;
+  scroll-behavior: smooth;
+}
+.course{
+  border-bottom: 1px solid rgb(250, 128, 114 ,0.2);
+  
+  border-radius: 5px;
+  padding: 5px;
+  min-width: 120px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 5px;
+  cursor: pointer;
+  z-index: 0;
+}
+.course.active{
+  min-width: 350px;
+  transition: 0.5s;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.course-info{
+  height: 60%;
+  display: flex;
+  
+  align-items: flex-end;
+  justify-content: space-between;
+  align-content: flex-end;
+
+}
+
+
+
+#course-1.active{
+  background-image: url(./src/curso1.jpg);
+
+}
+#course-2.active{
+  background-image: url(./src/curso2.png);
+ 
+}
+#course-3.active{
+  background-image: url(./src/curso3.png);
+ 
+}
+#course-4.active{
+  background-image: url(./src/curso4.png);
+
+}
+#course-5.active{
+  background-image: url(./src/curso5.png);
+
+}
+#course-6.active{
+  background-image: url(./src/curso6.png);
+ 
+}
+#course-7.active{
+  background-image: url(./src/curso7.png);
+
+}
+#course-8.active{
+  background-image: url(./src/curso8.jpg);
+
+}
+.course a i {
+  color: black;
+}
+
+
+
+#contact{
+  display: none;
+  height: 50%;
+  width: 70%;
+  position: absolute;
+  bottom: 50%;
+  left:10%;
+  transform: translate(28.5%, 50%);
+  border-radius: 10px;
+}
+.about{
+  display: none;
+}
+
+
+.contact-list{
+  font-size: 30px;
+  
+  list-style: none;
+  width: 88%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: flex-end;
+  padding-right: 30px;
+}
+.contact a i{
+  color: var(--color-vainilla);
+  font-size: 45px;
+  width: 50px;
+  height: 50px;
+  
+  padding: 10px;
+ 
+}
+.contact a i:hover{
+  color: #e66465;
+  
+  transition: 0.1s;
+  transform: translateX(-10px) 
+}
+
+@media screen and (max-width: 900px) {
+  .bg-light{
+  width: 300px;
+  height: 300px;
+}
+}
+@media screen and (max-width: 600px) {
+  .bg-light{
+    width: 200px;
+    height: 200px;
+  }
+  }
+  
+
+@media screen and (max-width: 400px) {
+  .bg-light{
+    display: none;
+  }
+  #main {
+    padding: 0 5px;
+    margin: 0;
+  }
+  .contact a i{
+    padding: 0;
+    margin: 5px 0;
+  }
+  }
