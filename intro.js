@@ -7,24 +7,13 @@ function openNav() {
     document.body.style.backgroundColor = "rgba(0,00,0,0.4)";
 
   }
-
-  function closeAll(){
-    document.getElementById("sidenavCV").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    document.body.style.backgroundColor = "black";
-    document.getElementById("contact").style.display = "none";
-    document.querySelector(".about").style.display = "none";
-    document.getElementById("self-learning").style.display = "none";
-    document.getElementById("work").style.display = "none";
-  }
-
-
-
-function closeNav() {
+  function closeNav() {
     closeAll()
-    
+
     document.querySelector(".bg-light").style.marginLeft = "0";
     document.getElementById("name").style.display = "block";
+    document.querySelector(".about").style.display = "none";
+
     document.querySelector(".title").style.display = "block";
     document.querySelector(".container-main").style.justifyContent = "space-between";
     document.querySelector(".container-main").style.alignItems = "flex-end";
@@ -37,18 +26,37 @@ function closeNav() {
     document.querySelector(".info-personal").style.display = "none";
 */
 
-
-
-
-
   } 
+
+  function closeAll(){
+    document.getElementById("sidenavCV").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "black";
+    document.getElementById("contact").style.display = "none";
+    document.querySelector(".about").style.display = "none";
+    document.getElementById("self-learning").style.display = "none";
+    document.getElementById("work").style.display = "none";
+   
+
+  }
+
+
+
+
 
 
 function showWork(){
   closeAll()
-  document.getElementById("name").style.display = "block";
+  document.getElementById("name").style.display = "none";
+  document.querySelector(".quote").style.display = "none";
+  document.querySelector(".title").style.display = "none";
+
+ 
+
   
-  document.querySelector(".bg-light").style.marginLeft = "65%"; 
+  
+  
+  document.querySelector(".bg-light").style.marginLeft = "75%"; 
   document.getElementById("work").style.display = "block";
   document.querySelector(".container-main").style.justifyContent = "flex-end";
   document.querySelector(".container-main").style.alignItems = "flex-end";
@@ -71,6 +79,7 @@ function showInfo(){
   document.querySelector(".container-main").style.flexDirection = "column";
   document.querySelector(".info-personal").style.display = "block";
   document.querySelector(".about").style.display = "block";
+  
   document.querySelector(".bg-light").style.background ="radial-gradient( #F3DEBA,#e66465, #9198e5)"
   document.querySelector(".bg-light").style.marginTop = "0"; 
   
