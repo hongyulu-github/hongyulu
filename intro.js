@@ -50,12 +50,6 @@ function showWork(){
   document.getElementById("name").style.display = "none";
   document.querySelector(".quote").style.display = "none";
   document.querySelector(".title").style.display = "none";
-
- 
-
-  
-  
-  
   document.querySelector(".bg-light").style.marginLeft = "75%"; 
   document.getElementById("work").style.display = "block";
   document.querySelector(".container-main").style.justifyContent = "flex-end";
@@ -72,14 +66,11 @@ function showInfo(){
   closeAll()
  
   document.getElementById("name").style.display = "block";
- 
-
   document.querySelector(".container-main").style.justifyContent = "center";
   document.querySelector(".container-main").style.alignItems = "center";
   document.querySelector(".container-main").style.flexDirection = "column";
   document.querySelector(".info-personal").style.display = "block";
   document.querySelector(".about").style.display = "block";
-  
   document.querySelector(".bg-light").style.background ="radial-gradient( #F3DEBA,#e66465, #9198e5)"
   document.querySelector(".bg-light").style.marginTop = "0"; 
   
@@ -103,7 +94,7 @@ function showSelfLearning(){
 function showContact(){
   closeAll()
   document.getElementById("contact").style.display = "block";
-  document.querySelector(".info-personal").style.display = "none";
+ // document.querySelector(".info-personal").style.display = "none";
   document.getElementById("self-learning").style.display = "none";
   document.querySelector(".bg-light").style.marginTop = "6%"; 
 
