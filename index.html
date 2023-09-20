@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>Hongyu Lu</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="intro.css" />
+
+    <script
+      src="https://kit.fontawesome.com/8233067287.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="sidenav" id="sidenavCV">
+        <nav>
+          <button class="closebtn" onclick="closeNav()">
+            <i class="fa-solid fa-house"></i>
+          </button>
+          <img src="./src/photo.jpg" />
+          <a href="#" onclick="showInfo()">Info</a>
+          <a href="#work" onclick="showWork()">Work</a>
+          <a href="#self-learning" onclick="showSelfLearning()">Courses</a>
+          <a href="#contact" onclick="showContact()">Contact</a>
+        </nav>
+      </div>
+
+      <i class="fa-solid fa-bars-staggered openbtn" onclick="openNav()"></i>
+      <main class="container-main" id="main">
+        <div class="info-personal">
+          <h1 id="name">Hongyu Lu</h1>
+          <p class="title">Front-end Developer</p>
+    
+          <p class="about">
+            Bienvenidos, visitantes de mi porfolio personal. <br />
+            No sé tú, pero a mí me mola lo que mueve la pasión. Salí de la universitad con un título de letras, ahora sueño con dedicarme al mundo Tech. 
+            Y la pasión, me empuja hasta aquí, una desarrolladora de web autodidacta. Convierto la pasión en acción y
+            el aprendizaje en crecimiento constante.<br />
+            Amo cuando los códigos funciona, y me fascina la posibilidad de crear. <br />
+            
+            <br />
+            Mientras trabajaba de profesora de chino en la EOI de Málaga, he realizado los cursos, y aplicado lo aprendido en práctica, los conocimientos de HTML, CSS,
+            JavaScript, React.js, Node.js, SQL y Python.
+            Es la pasión de experimentar en la vida que me dio una mente abierta y una voluntad
+            inquebrantable. <br />
+
+            <br />
+            Me llamo Hongyu Lu, soy una gaviota en busca de libertad.
+            
+
+          </p>
+        </div>
+        <div class="quote">
+          <p class="quote">
+            "El viaje de mil millas comienza con un solo paso." - Lao Tzu
+          </p>
+        </div>
+        <div id="work">
+          <div id="work-container">
+            <ul class="work-list">
+              <li class="works">
+                <a
+                  href="https://game-hub-hongyulu-github.vercel.app/"
+                  target="_blank"
+                  >
+                  <p><b>Game Hub</b> </br></p>
+                  
+                <img class="imgWork" src="./src/game-hub.png" alt="">
+                </a>
+
+              </li>
+              <li class="works">
+              <li class="works">
+                <a
+                  href="https://hongyulu-github.github.io/kiki-s-house/"
+                  target="_blank"
+                  >
+                  <p><b>Kiki's House</b> </br></p>
+                  
+                <img class="imgWork" src="./src/kiki's house.png" alt="">
+                </a>
+
+              </li>
+              <li class="works">
+                
+  
+                <a
+                  href="https://hongyulu-github.github.io/EOIMalagaChinoLu/"
+                  target="_blank"
+                >
+                <p><b>Nombre chino</b></br></p>
+                  
+                  <img class="imgWork" src="./src/nombre chino.png" alt=""></a
+                >
+              </li>
+              <li class="works">
+                
+                <a
+                  href="https://hongyulu-github.github.io/simondice/"
+                  target="_blank"
+                >
+                <p><b>Simon Dice</b> </br></p>
+                  
+                  <img class="imgWork" src="./src/simon dice.png" alt="">
+  </a
+                >
+              </li>
+             
+            </ul>
+
+
+          </div>
+          
+        </div>
+        <div id="self-learning">
+          <div id="course-container">
+            <ul class="course-list">
+              <li id="course-2" class="course active">
+                <a
+                  href="https://www.freecodecamp.org/certification/sannrei/front-end-development-libraries"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+
+                <div class="course-info">
+                  <h3 class="course-title">Front End Development Libraries</h3>
+                </div>
+              </li>
+              <li id="course-3" class="course">
+                <a
+                  href="https://freecodecamp.org/certification/sannrei/javascript-algorithms-and-data-structures"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <div class="course-info">
+                  <h3 class="course-title">
+                    JavaScript Algorithms and Data Structures
+                  </h3>
+                </div>
+              </li>
+              <li id="course-4" class="course">
+                <a
+                  href="https://freecodecamp.org/certification/sannrei/responsive-web-design"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <div class="course-info">
+                  <h3 class="course-title">Responsive Web Design</h3>
+                </div>
+              </li>
+              <li id="course-5" class="course">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/verify/6ZKCJVX2F7VM"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <div class="course-info">
+                  <h3 class="course-title">Python Data Structures</h3>
+                </div>
+              </li>
+              <li id="course-6" class="course">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/verify/D456JP77VHV9"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <div class="course-info">
+                  <h3 class="course-title">Using Databases with Python</h3>
+                </div>
+              </li>
+              <li id="course-7" class="course">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/verify/Q3XBAHLTARC3"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+                <div class="course-info">
+                  <h3 class="course-title">SQL for Data Science</h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="contact">
+          <ul class="contact-list">
+            <li class="contact">
+              <a
+                href="https://www.linkedin.com/in/hongyu-lu-b86b44115/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li class="contact">
+              <a href="https://github.com/luluengithub" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li class="contact">
+              <a href="https://twitter.com/HongyuLulu" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li class="contact">
+              <a href="mailto:hongyu.lu_cn@outlook.com" target="_blank"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </main>
+
+      <div class="bg-light"></div>
+    </div>
+    <script src="intro.js"></script>
+  </body>
+</html>
